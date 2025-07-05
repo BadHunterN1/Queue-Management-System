@@ -111,7 +111,7 @@ export const QueueDisplayClient: React.FC<QueueDisplayClientProps> = ({
 						<div className="text-6xl font-bold text-blue-600 mb-2">
 							{queue?.queue_number || 0}
 						</div>
-						<div className="text-lg text-gray-600">
+						<div className="text-lg font-bold text-gray-600">
 							{queue?.queue_number === 0 ? "المكان متاح" : `الأشخاص المنتظرين`}
 						</div>
 					</div>
@@ -155,7 +155,7 @@ export const QueueDisplayClient: React.FC<QueueDisplayClientProps> = ({
 							{(() => {
 								if (!queue) return "Offline";
 								const lastUpdate = new Date(queue.updated_at);
-								const timeElapsedMs = +time - lastUpdate.getTime();
+								const timeElapsedMs = Date.now() - lastUpdate.getTime();
 								const timeElapsedMinutes = Math.floor(
 									timeElapsedMs / (1000 * 60)
 								);
