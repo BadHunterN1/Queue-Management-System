@@ -68,7 +68,7 @@ export const LoginClient: React.FC = () => {
 									value={email}
 									onChange={(e) => setEmail(e.target.value)}
 									className="w-full pl-10 pr-4 py-3 border border-gray-300 rounded-xl focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-colors"
-									placeholder="Enter your email"
+									placeholder="أدخل بريدك الإلكتروني"
 									disabled={loading}
 								/>
 							</div>
@@ -85,7 +85,7 @@ export const LoginClient: React.FC = () => {
 									value={password}
 									onChange={(e) => setPassword(e.target.value)}
 									className="w-full pl-10 pr-12 py-3 border border-gray-300 rounded-xl focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-colors"
-									placeholder="Enter your password"
+									placeholder="أدخل كلمة المرور الخاصة بك"
 									disabled={loading}
 								/>
 								<button
